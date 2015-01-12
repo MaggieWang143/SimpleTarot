@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cl7-z7-RHT">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="0Gr-uR-Dij"/>
+                                    <constraint firstAttribute="height" constant="113" id="l9W-p6-yNz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
+                                <state key="normal" title="One Card" backgroundImage="buttonborder3.jpg">
+                                    <color key="titleColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="drawcardalert:" destination="2" eventType="touchDown" id="HWO-OB-b9V"/>
+                                    <action selector="setValue1:" destination="2" eventType="touchDown" id="e03-r0-4vd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggT-Zc-bBw">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="174-pD-paZ"/>
+                                    <constraint firstAttribute="height" constant="113" id="Jkg-1f-Grd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
+                                <state key="normal" title="Three Cards" backgroundImage="buttonborder3.jpg">
+                                    <color key="titleColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="drawcardalert:" destination="2" eventType="touchDown" id="Mq4-s2-7oj"/>
+                                    <action selector="setValue2:" destination="2" eventType="touchDown" id="TAh-bt-0WP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60s-Ih-K9T">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" type="user" id="0iM-ah-zoB"/>
+                                    <constraint firstAttribute="width" constant="119" id="pnj-Az-BNo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
+                                <state key="normal" title="Five Cards" backgroundImage="buttonborder3.jpg">
+                                    <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="drawcardalert:" destination="2" eventType="touchDown" id="sUZ-am-yXw"/>
+                                    <action selector="setValue3:" destination="2" eventType="touchDown" id="1VN-XI-sPC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="60s-Ih-K9T" secondAttribute="bottom" constant="90" id="8HH-wu-GqS"/>
+                            <constraint firstItem="cl7-z7-RHT" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="ZEt-5s-pQU"/>
+                            <constraint firstItem="ggT-Zc-bBw" firstAttribute="top" secondItem="3" secondAttribute="top" constant="124" id="cvj-Ad-nG1"/>
+                            <constraint firstItem="60s-Ih-K9T" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="11" id="g8O-R0-PTc"/>
+                            <constraint firstItem="cl7-z7-RHT" firstAttribute="top" secondItem="3" secondAttribute="top" constant="8" id="oNn-ZH-daG"/>
+                            <constraint firstItem="ggT-Zc-bBw" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="27" id="vnY-oU-ETW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drawcardalert" destination="cl7-z7-RHT" id="qWx-7q-wkh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buttonborder3.jpg" width="474" height="478"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="drawcardalert:"/>
+                <relationship kind="action" name="setValue1:"/>
+                <relationship kind="action" name="setValue2:"/>
+                <relationship kind="action" name="setValue3:"/>
+                <relationship kind="outlet" name="drawcardalert" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
